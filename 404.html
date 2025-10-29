@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Page en construction - 404</title>
+    <link rel="stylesheet" href="game.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <!-- Meta pour mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#2a2a2a">
+</head>
+<body>
+    <div class="error-page">
+        <!-- Message d'erreur 404 -->
+        <div class="error-header">
+            <h1 class="error-title">404</h1>
+            <h2 class="error-subtitle">OUPS ! LA PAGE EST ENCORE EN TRAVAUX</h2>
+            <p class="error-message">Tant que vous êtes là, amusez-vous !</p>
+        </div>
+
+        <!-- Console GameBoy -->
+        <div id="gameboy-container">
+            <div class="game-boy-text">GAME BOY</div>
+            <div class="speaker">
+                <div class="speaker-line"></div>
+                <div class="speaker-line"></div>
+                <div class="speaker-line"></div>
+                <div class="speaker-line"></div>
+                <div class="speaker-line"></div>
+            </div>
+            
+            <div id="screen-container">
+                <div id="game-screen">
+                    <canvas id="game-canvas"></canvas>
+                    
+                    <div id="start-screen" class="screen-text">
+                        <div class="title">MATHILDE'S BIRD</div>
+                        <div class="instructions">APPUYEZ SUR ESPACE POUR VOLER</div>
+                        <div class="instructions">EVITEZ LES TUYAUX</div>
+                        <button class="btn" id="start-btn">JOUER</button>
+                    </div>
+                    
+                    <div id="game-over-screen" class="screen-text hidden">
+                        <div class="title">GAME OVER</div>
+                        <div class="score">SCORE: <span id="final-score">0</span></div>
+                        <div class="instructions">APPUYEZ SUR ESPACEPOUR REJOUER</div>
+                        <button class="btn" id="restart-btn">REJOUER</button>
+                    </div>
+                    
+                    <div id="score-display" class="score hidden">0</div>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <div class="d-pad">
+                    <div class="d-pad-center"></div>
+                    <div class="d-pad-up"></div>
+                    <div class="d-pad-down"></div>
+                    <div class="d-pad-left"></div>
+                    <div class="d-pad-right"></div>
+                </div>
+                
+                <div class="buttons">
+                    <div class="button button-b">B</div>
+                    <div class="button button-a">A</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="navigation">
+            <a href="/" class="btn-nav">← RETOUR À L'ACCUEIL</a>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
